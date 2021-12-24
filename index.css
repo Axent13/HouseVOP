@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: #242B33;
+}
+
+.site-wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 2.35rem;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.logo__name {
+    font-family: 'PostNoBillsJaffna-SemiBold', Arial, sans-serif;
+    font-size: 2.55rem;
+    color: #fff;
+    line-height: 3.5rem;
+}
+
+.logo__type {
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 0.87rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.main-navigation__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 38.6rem; 
+}
+
+.main-navigation__link {
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-navigation__link:hover {
+    color: #b9b9b9;
+}
+
+.first-screen {
+    height: 100vh;
+    background-image: url(./images/first-screen-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.first-screen-wrapper {
+    max-width: 43.5rem;
+    margin: 0 auto;
+}
+
+.first-screen__text {
+    padding-top: 14rem;
+    font-size: 3.3rem;
+    font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
+    text-align: center;
+    color: #D4C17F;
+}
+
+.first-screen__mouse {
+    margin: 6.2rem auto 0;
+    background-image: url(./images/mouse.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+.first-screen__address-and-phone {
+    display: flex;
+    justify-content: space-between;
+    max-width: 37.6rem;
+    margin-top: 14.4rem;
+}
+
+.first-screen__address {
+    display: flex;
+}
+
+.first-screen__address-icon {
+    background-image: url(./images/placeholder.png);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+}
+
+.first-screen__contact-text {
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1.26rem;
+    color: #fff; 
+    margin-left: 1.1rem;
+}
+
+.first-screen__phone {
+    display: flex;
+}
+
+.first-screen__phone-icon {
+    background-image: url(./images/phone-call.png);
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+}
+
+.first-screen__phone-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.first-screen__phone-link:hover {
+    color: #b9b9b9;
+}

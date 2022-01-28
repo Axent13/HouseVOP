@@ -60,7 +60,7 @@ body {
 }
 
 .first-screen {
-    height: 100vh;
+    height: 93.7vh;
     background-image: url(./images/first-screen-background.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -132,4 +132,34 @@ body {
 
 .first-screen__phone-link:hover {
     color: #b9b9b9;
+}
+
+.testimonials {
+    max-width: 57.5rem;
+    margin: 0 auto;
+}
+
+.testimonials__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__list-item {
+    max-width: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 13.3rem;
+}
+
+.testimonials__list-item:last-child {
+    max-width: 10rem;
+}
+
+.testimonials__description {
+    font-family: 'Roboto-Light', Arial, sans-serif;
+    font-size: 1.4286rem;
+    color: #fff;
+    text-align: center;
 }

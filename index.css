@@ -5,20 +5,25 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 body {
     background-color: #242B33;
 }
 
-.site-wrapper {
-    max-width: 1110px;
-    margin: 0 auto;
+.header-and-first-screen-wrapper {
+    background-image: url(./images/first-screen-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -0.5rem;
+    background-position-y: -2rem;
+    height: 52.5rem;
 }
 
 .header {
-    margin-top: 2.35rem;
+    margin: 1.9rem auto 0;
+    max-width: 69rem;
     display: flex;
     align-items: center;
 }
@@ -29,42 +34,38 @@ body {
 
 .logo__name {
     font-family: 'PostNoBillsJaffna-SemiBold', Arial, sans-serif;
-    font-size: 2.55rem;
+    font-size: 2.25rem;
     color: #fff;
-    line-height: 3.5rem;
 }
 
 .logo__type {
     font-family: 'Raleway-Regular', Arial, sans-serif;
-    font-size: 0.87rem;
+    font-size: 0.75rem;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1.3px;
+    line-height: 0.8;
+}
+
+.main-navigation {
+    width: 33.6rem; 
 }
 
 .main-navigation__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 38.6rem; 
 }
 
 .main-navigation__link {
     font-family: 'Raleway-Regular', Arial, sans-serif;
     text-decoration: none;
+    font-size: 0.875rem;
     color: #fff;
 }
 
 .main-navigation__link:hover {
     color: #b9b9b9;
-}
-
-.first-screen {
-    height: 93.7vh;
-    background-image: url(./images/first-screen-background.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
 }
 
 .first-screen-wrapper {
@@ -73,15 +74,15 @@ body {
 }
 
 .first-screen__text {
-    padding-top: 14rem;
-    font-size: 3.3rem;
+    padding-top: 12.5rem;
+    font-size: 3rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     text-align: center;
     color: #D4C17F;
 }
 
 .first-screen__mouse {
-    margin: 6.2rem auto 0;
+    margin: 5rem auto 0;
     background-image: url(./images/mouse.svg);
     background-repeat: no-repeat;
     width: 40px;
@@ -91,8 +92,8 @@ body {
 .first-screen__address-and-phone {
     display: flex;
     justify-content: space-between;
-    max-width: 37.6rem;
-    margin-top: 14.4rem;
+    max-width: 33rem;
+    margin: 12.2rem 0 0 2.9rem;
 }
 
 .first-screen__address {
@@ -109,7 +110,7 @@ body {
 .first-screen__contact-text {
     font-family: 'Raleway-Regular', Arial, sans-serif;
     text-decoration: none;
-    font-size: 1.26rem;
+    font-size: 1.125rem;
     color: #fff; 
     margin-left: 1.1rem;
 }
@@ -135,8 +136,8 @@ body {
 }
 
 .testimonials {
-    max-width: 57.5rem;
-    margin: 0 auto;
+    max-width: 51.5rem;
+    margin: 5rem auto 0;
 }
 
 .testimonials__list {
@@ -150,27 +151,24 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 13.3rem;
+    min-height: 11.3rem;
 }
 
-.testimonials__list-item:last-child {
-    max-width: 10rem;
-}
 
 .testimonials__description {
     font-family: 'Roboto-Light', Arial, sans-serif;
-    font-size: 1.43rem;
+    font-size: 1.25rem;
     color: #fff;
     text-align: center;
 }
 
 .apartments {
-    margin: 8rem auto 0;
-    max-width: 79.3rem;
+    margin: 7.3rem auto 0;
+    max-width: 69rem;
 }
 
 .apartments__header {
-    font-size: 2.57rem;
+    font-size: 2.25rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     color: #D4C17F;
 }
@@ -179,18 +177,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 6.5rem;
+    margin-top: 5.5rem;
 }
 
 .apartments__card {
-    width: 38.2rem;
-    height: 22.9rem;
-    margin-bottom: 2rem;
+    width: 49%;
+    margin-bottom: 4.5rem;
     font-family: 'Raleway-Regular', Arial, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: white;
-    padding-top: 17.7rem;
-    padding-left: 3.5rem;
+    padding-top: 15.3rem;
+    padding-left: 3.1rem;
 }
 
 .apartments__card-1 {

@@ -192,20 +192,61 @@ body {
 
 .apartments__card-1 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-1.png') no-repeat;
+                url('./images/apartments-1.png') center/cover no-repeat,
+                #D4C17F;
 }
 
 .apartments__card-2 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-2.png') no-repeat;
+                url('./images/apartments-2.png') center/cover no-repeat,
+                #D4C17F;
 }
 
 .apartments__card-3 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-3.png') no-repeat;
+                url('./images/apartments-3.png') center/cover no-repeat,
+                #D4C17F;
 }
 
 .apartments__card-4 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-4.png') no-repeat;
+                url('./images/apartments-4.png') center/cover no-repeat,
+                #D4C17F;
+}
+
+.cta {
+    max-width: 69rem;
+    min-height: 35rem;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%),
+                linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
+                url('./images/cta-background.png'),
+                #C4C4C4;
+}
+
+.cta__header {
+    margin-top: 9.2rem;
+    font-size: 2.25rem;
+    font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
+    color: #D4C17F;
+}
+
+.cta__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cta__description {
+    margin-top: 2.7rem;
+    max-width: 50%;
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.cta__form {
+    margin-top: 1.2rem;
+    min-width: 33.75rem;
 }

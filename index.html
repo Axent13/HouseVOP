@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="fonts.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e615ca16-b7c1-4a6c-9e3d-bf277372b214&lang=ru_RU" type="text/javascript"></script>
     <title>HouseVOP</title>
 </head>
 <body>
@@ -113,7 +114,8 @@
         <div class="video__play-button"></div>
     </section>
     <section class="map">
-        <div class="map__map">Карта</div>
+        <h2 class="map__header">Район на карте</h2>
+        <div id="map" class="map__map"></div>
     </section>
     <section class="contacts">
         <h2 class="contacts__header">Есть вопросы?</h2>

@@ -215,17 +215,20 @@ body {
 }
 
 .cta {
-    max-width: 69rem;
-    min-height: 35rem;
-    margin: 0 auto;
     background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%),
                 linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
-                url('./images/cta-background.png'),
+                url('./images/cta-background.png') 100%/cover no-repeat,
                 #C4C4C4;
 }
 
+.cta__wrapper {
+    max-width: 69rem;
+    min-height: 35rem;
+    margin: 0 auto;
+}
+
 .cta__header {
-    margin-top: 9.2rem;
+    padding-top: 9.2rem;
     font-size: 2.25rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     color: #D4C17F;
@@ -239,7 +242,6 @@ body {
 
 .cta__description {
     margin-top: 2.7rem;
-    max-width: 50%;
     font-family: 'Raleway-Regular', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
@@ -247,6 +249,61 @@ body {
 }
 
 .cta__form {
-    margin-top: 1.2rem;
+    margin-top: 0.2rem;
+    min-height: 10.5rem;
     min-width: 33.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.cta__name,
+.cta__phone,
+.cta__submit-button {
+    height: 3.125rem;
+    width: 15.938rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #bebebe;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.cta__note {
+    width: 15.938rem;
+    text-align: center;
+    background: none;
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 0.813rem;
+    color: #e7e7e7;
+}
+
+.cta__submit-button {
+    background: #D4C17F;
+    font-family: 'Raleway-Bold', Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.cta__submit-button:hover {
+    box-shadow: 0px 0px 4px 4px rgba(212, 193, 127, 0.32);
+}
+
+.cta__submit-button:active {
+    box-shadow: 0px 0px 4px 4px rgba(212, 193, 127, 0.32);
+}
+
+/* 
+    Правило для избежания изменения стилей инпутов при выборе сохраненного в Хроме значения для таких полей
+    Взято с https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied
+*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+  }

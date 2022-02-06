@@ -154,7 +154,6 @@ body {
     min-height: 11.3rem;
 }
 
-
 .testimonials__description {
     font-family: 'Roboto-Light', Arial, sans-serif;
     font-size: 1.25rem;
@@ -306,4 +305,37 @@ body {
 input:-webkit-autofill,
 input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
-  }
+}
+
+.video {
+    position: relative;
+    margin: 0 auto;
+    width: 44.938rem;
+    height: 40.625rem;
+    cursor: pointer;
+}
+
+.video:hover > .video__play-button {
+    opacity: 0.8;
+}
+
+.video__video {
+    margin: 0 auto;
+    width: inherit;
+    height: inherit;
+}
+
+.video__play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    background: url('./images/play-button.svg');
+}
+
+.video__play-button_hidden {
+    display: none;
+}

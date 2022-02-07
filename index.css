@@ -355,3 +355,61 @@ input:-webkit-autofill:focus {
     margin-top: 5.7rem;
     height: 22.375rem;
 }
+
+.contacts {
+    max-width: 68.688rem;
+    margin: 10.7rem auto 0;
+}
+
+.contacts__header {
+    font-size: 2.25rem;
+    font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
+    color: #D4C17F;
+}
+
+.contacts__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.contacts__name,
+.contacts__phone,
+.contacts__submit-button {
+    height: 3.125rem;
+    width: 15.938rem;
+    text-align: center;
+    padding: 0 1rem;
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 0.875rem;
+    color: #bebebe;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+}
+
+.contacts__note {
+    width: 15.938rem;
+    text-align: center;
+    background: none;
+    font-family: 'Raleway-Regular', Arial, sans-serif;
+    font-size: 0.813rem;
+    color: #e7e7e7;
+}
+
+.contacts__submit-button {
+    background: #D4C17F;
+    font-family: 'Raleway-Bold', Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.contacts__submit-button:hover {
+    box-shadow: 0px 0px 4px 4px rgba(212, 193, 127, 0.32);
+}
+
+.contacts__submit-button:active {
+    box-shadow: 0px 0px 4px 4px rgba(212, 193, 127, 0.32);
+}

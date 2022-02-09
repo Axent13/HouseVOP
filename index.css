@@ -8,6 +8,18 @@ html {
     font-size: 16px;
 }
 
+@media (max-width: 1110px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 864px) {
+    html {
+        font-size: 10px;
+    }
+}
+
 body {
     background-color: #242B33;
 }
@@ -23,7 +35,8 @@ body {
 
 .header {
     margin: 1.9rem auto 0;
-    max-width: 69rem;
+    max-width: 72rem;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
 }
@@ -48,7 +61,7 @@ body {
 }
 
 .main-navigation {
-    width: 33.6rem; 
+    width: 33.6rem;
 }
 
 .main-navigation__list {
@@ -136,7 +149,8 @@ body {
 }
 
 .testimonials {
-    max-width: 51.5rem;
+    max-width: 54.5rem;
+    padding: 0 1.5rem;
     margin: 5rem auto 0;
 }
 
@@ -163,7 +177,8 @@ body {
 
 .apartments {
     margin: 7.3rem auto 0;
-    max-width: 69rem;
+    max-width: 72rem;
+    padding: 0 1.5rem;
 }
 
 .apartments__header {
@@ -221,7 +236,8 @@ body {
 }
 
 .cta__wrapper {
-    max-width: 69rem;
+    max-width: 72rem;
+    padding: 0 1.5rem;
     min-height: 35rem;
     margin: 0 auto;
 }
@@ -237,6 +253,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cta__description {
@@ -245,6 +262,8 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: white;
+    min-width: 33rem;
+    padding-right: 3rem;
 }
 
 .cta__form {
@@ -286,7 +305,7 @@ body {
     font-size: 1rem;
     color: white;
     cursor: pointer;
-    transition: all ease 0.2s;
+    transition: box-shadow ease 0.2s;
 }
 
 .cta__submit-button:hover {
@@ -334,6 +353,7 @@ input:-webkit-autofill:focus {
     height: 6.25rem;
     border-radius: 50%;
     background: url('./images/play-button.svg');
+    background-size: contain;
 }
 
 .video__play-button_hidden {
@@ -341,7 +361,8 @@ input:-webkit-autofill:focus {
 }
 
 .map {
-    max-width: 69.375rem;
+    max-width: 72.375rem;
+    padding: 0 1.5rem;
     margin: 8.5rem auto 0;
 }
 
@@ -357,7 +378,8 @@ input:-webkit-autofill:focus {
 }
 
 .contacts {
-    max-width: 68.688rem;
+    max-width: 71.688rem;
+    padding: 0 1.5rem;
     margin: 10.7rem auto 11rem;
 }
 
@@ -403,7 +425,7 @@ input:-webkit-autofill:focus {
     font-size: 1rem;
     color: white;
     cursor: pointer;
-    transition: all ease 0.2s;
+    transition: box-shadow ease 0.2s;
 }
 
 .contacts__submit-button:hover {
@@ -419,9 +441,9 @@ input:-webkit-autofill:focus {
 }
 
 .footer-wrapper {
-    max-width: 69rem;
+    max-width: 72rem;
     margin: 0 auto;
-    padding: 3.9rem 0 2.5rem;
+    padding: 3.9rem 1.5rem 2.5rem;
     display: flex;
     justify-content: space-between;
 }

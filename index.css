@@ -403,6 +403,13 @@ body {
     }
 }
 
+@media (max-width: 572px) {
+    .cta__form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .cta__name,
 .cta__phone,
 .cta__submit-button {
@@ -589,24 +596,31 @@ input:-webkit-autofill:focus {
     }
 }
 
-.contacts__form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2.5rem;
+@media (max-width: 768px) {
+    .contacts__content {
+        margin: 1rem auto;
+    }
 }
 
-@media (max-width: 768px) {
+.contacts__form {
+    display: grid;
+    gap: 2.188rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    margin: 1.2rem 0 0 0rem;
+}
+
+@media (max-width: 864px) {
     .contacts__form {
-        display: grid;
-        gap: 2.188rem;
+        margin: 1rem auto;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "name phone"
-            "note button";
-        align-items: center;
-        margin: 1.2rem auto 0;
-        max-width: 50rem;
+    }
+}
+
+@media (max-width: 572px) {
+    .contacts__form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -614,7 +628,7 @@ input:-webkit-autofill:focus {
 .contacts__phone,
 .contacts__submit-button {
     height: 3.125rem;
-    width: 15.938rem;
+    width: 15.538rem;
     text-align: center;
     padding: 0 1rem;
     font-family: 'Raleway-Regular', Arial, sans-serif;
@@ -636,20 +650,10 @@ input:-webkit-autofill:focus {
 }
 
 @media (max-width: 768px) {
-    .contacts__name {
-        grid-area: name;
-    }
-}
-
-@media (max-width: 768px) {
-    .contacts__phone {
-        grid-area: phone;
-    }
-}
-
-@media (max-width: 768px) {
     .contacts__note {
-        grid-area: note;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 24rem;
     }
 }
 
@@ -660,12 +664,14 @@ input:-webkit-autofill:focus {
     font-family: 'Raleway-Regular', Arial, sans-serif;
     font-size: 0.813rem;
     color: #e7e7e7;
+    order: -1;
 }
 
 @media (max-width: 768px) {
     .contacts__note {
         font-size: 1.2rem;
         width: 24rem;
+        order: initial;
     }
 }
 
@@ -688,7 +694,6 @@ input:-webkit-autofill:focus {
 
 @media (max-width: 768px) {
     .contacts__submit-button {
-        grid-area: button;
         font-size: 1.5rem;
     }
 }

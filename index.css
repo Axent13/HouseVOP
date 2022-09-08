@@ -33,6 +33,12 @@ body {
     height: 52.5rem;
 }
 
+@media (max-width: 768px) {
+    .header-and-first-screen-wrapper {
+        height: 37.5rem;
+    }
+}
+
 .header {
     margin: 1.9rem auto 0;
     max-width: 72rem;
@@ -45,15 +51,21 @@ body {
     margin-right: auto;
 }
 
+@media (max-width: 764px) {
+    .header__logo {
+        margin: 0 auto;
+    }
+}
+
 .logo__name {
     font-family: 'PostNoBillsJaffna-SemiBold', Arial, sans-serif;
-    font-size: 2.25rem;
+    font-size: 36px;
     color: #fff;
 }
 
 .logo__type {
     font-family: 'Raleway-Regular', Arial, sans-serif;
-    font-size: 0.75rem;
+    font-size: 12px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1.3px;
@@ -64,16 +76,32 @@ body {
     width: 33.6rem;
 }
 
+@media (max-width: 864px) {
+    .main-navigation {
+        width: 45.6rem;
+    }
+}
+
+@media (max-width: 764px) {
+    .main-navigation {
+        display: none;
+    }
+}
+
 .main-navigation__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
+.main-navigation__list-item {
+    flex-shrink: 0;
+}
+
 .main-navigation__link {
     font-family: 'Raleway-Regular', Arial, sans-serif;
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 14px;
     color: #fff;
 }
 
@@ -86,12 +114,27 @@ body {
     margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+    .first-screen-wrapper {
+        max-width: none;
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
 .first-screen__text {
     padding-top: 12.5rem;
     font-size: 3rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     text-align: center;
     color: #D4C17F;
+}
+
+@media (max-width: 768px) {
+    .first-screen__text {
+        font-size: 4rem;
+        padding-top: 4.5rem;
+    }
 }
 
 .first-screen__mouse {
@@ -102,11 +145,24 @@ body {
     height: 40px;
 }
 
+@media (max-width: 768px) {
+    .first-screen__mouse {
+        display: none;
+    }
+}
+
 .first-screen__address-and-phone {
     display: flex;
     justify-content: space-between;
     max-width: 33rem;
     margin: 12.2rem 0 0 2.9rem;
+}
+
+@media (max-width: 768px) {
+    .first-screen__address-and-phone {
+        max-width: 39rem;
+        margin: 2.9rem auto;
+    }
 }
 
 .first-screen__address {
@@ -126,6 +182,12 @@ body {
     font-size: 1.125rem;
     color: #fff; 
     margin-left: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .first-screen__contact-text {
+        font-size: 1.5rem;
+    }
 }
 
 .first-screen__phone {
@@ -154,6 +216,12 @@ body {
     margin: 5rem auto 0;
 }
 
+@media (max-width: 768px) {
+    .testimonials {
+        margin: 0 auto;
+    }
+}
+
 .testimonials__list {
     display: flex;
     justify-content: space-between;
@@ -168,11 +236,23 @@ body {
     min-height: 11.3rem;
 }
 
+@media (max-width: 768px) {
+    .testimonials__list-item {
+        min-height: 12rem;
+    }
+}
+
 .testimonials__description {
     font-family: 'Roboto-Light', Arial, sans-serif;
     font-size: 1.25rem;
     color: #fff;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .testimonials__description {
+        font-size: 1.5rem;
+    }
 }
 
 .apartments {
@@ -185,6 +265,18 @@ body {
     font-size: 2.25rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     color: #D4C17F;
+}
+
+@media (max-width: 864px) {
+    .apartments__header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .apartments__header {
+        font-size: 3.25rem;
+    }
 }
 
 .apartments__apartments {
@@ -249,11 +341,34 @@ body {
     color: #D4C17F;
 }
 
+@media (max-width: 768px) {
+    .cta__header {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta__header {
+        font-size: 3.25rem;
+    }
+}
+
+@media (max-width: 864px) {
+    .cta__header {
+        text-align: center;
+    }
+}
+
 .cta__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+@media (max-width: 864px) {
+    .cta__content {
+        flex-wrap: wrap;
+    }
 }
 
 .cta__description {
@@ -262,18 +377,30 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: white;
-    min-width: 33rem;
+    max-width: 33rem;
     padding-right: 3rem;
 }
 
+@media (max-width: 768px) {
+    .cta__description {
+        margin: 1.2rem auto;
+        font-size: 1.4rem;
+        max-width: 50rem;
+    }
+}
+
 .cta__form {
-    margin-top: 0.2rem;
-    min-height: 10.5rem;
-    min-width: 33.75rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    gap: 2.188rem;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    margin: 1.2rem 0 0 0rem;
+}
+
+@media (max-width: 864px) {
+    .cta__form {
+        margin: 1rem auto;
+    }
 }
 
 .cta__name,
@@ -290,6 +417,17 @@ body {
     border: none;
 }
 
+@media (max-width: 768px) {
+    .cta__name,
+    .cta__phone,
+    .cta__submit-button {
+        margin: 0;
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 24rem;
+    }
+}
+
 .cta__note {
     width: 15.938rem;
     text-align: center;
@@ -299,6 +437,14 @@ body {
     color: #e7e7e7;
 }
 
+@media (max-width: 768px) {
+    .cta__note {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 24rem;
+    }
+}
+
 .cta__submit-button {
     background: #D4C17F;
     font-family: 'Raleway-Bold', Arial, sans-serif;
@@ -306,6 +452,12 @@ body {
     color: white;
     cursor: pointer;
     transition: box-shadow ease 0.2s;
+}
+
+@media (max-width: 768px) {
+    .cta__submit-button {
+        font-size: 1.5rem;
+    }
 }
 
 .cta__submit-button:hover {
@@ -332,6 +484,12 @@ input:-webkit-autofill:focus {
     width: 44.938rem;
     height: 40.625rem;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .video {
+        margin: 4rem auto;
+    }
 }
 
 .video:hover > .video__play-button {
@@ -366,15 +524,39 @@ input:-webkit-autofill:focus {
     margin: 8.5rem auto 0;
 }
 
+@media (max-width: 768px) {
+    .map {
+        margin: 2.5rem auto 0;
+    }
+}
+
 .map__header {
     font-size: 2.25rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     color: #D4C17F;
 }
 
+@media (max-width: 864px) {
+    .map__header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .map__header {
+        font-size: 3.25rem;
+    }
+}
+
 .map__map {
     margin-top: 5.7rem;
     height: 22.375rem;
+}
+
+@media (max-width: 864px) {
+    .map__map {
+        margin-top: 3rem;
+    }
 }
 
 .contacts {
@@ -383,10 +565,28 @@ input:-webkit-autofill:focus {
     margin: 10.7rem auto 11rem;
 }
 
+@media (max-width: 768px) {
+    .contacts{
+        margin: 3rem auto;
+    }
+}
+
 .contacts__header {
     font-size: 2.25rem;
     font-family: 'PlayfairDisplay-Bold', 'Times New Roman', serif;
     color: #D4C17F;
+}
+
+@media (max-width: 864px) {
+    .contacts__header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__header {
+        font-size: 3.25rem;
+    }
 }
 
 .contacts__form {
@@ -394,6 +594,20 @@ input:-webkit-autofill:focus {
     justify-content: space-between;
     align-items: center;
     margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .contacts__form {
+        display: grid;
+        gap: 2.188rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "name phone"
+            "note button";
+        align-items: center;
+        margin: 1.2rem auto 0;
+        max-width: 50rem;
+    }
 }
 
 .contacts__name,
@@ -410,6 +624,35 @@ input:-webkit-autofill:focus {
     border: none;
 }
 
+@media (max-width: 768px) {
+    .contacts__name,
+    .contacts__phone,
+    .contacts__submit-button {
+        margin: 0;
+        font-size: 1.5rem;
+        height: 4rem;
+        width: 24rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__name {
+        grid-area: name;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__phone {
+        grid-area: phone;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts__note {
+        grid-area: note;
+    }
+}
+
 .contacts__note {
     width: 15.938rem;
     text-align: center;
@@ -417,6 +660,13 @@ input:-webkit-autofill:focus {
     font-family: 'Raleway-Regular', Arial, sans-serif;
     font-size: 0.813rem;
     color: #e7e7e7;
+}
+
+@media (max-width: 768px) {
+    .contacts__note {
+        font-size: 1.2rem;
+        width: 24rem;
+    }
 }
 
 .contacts__submit-button {
@@ -434,6 +684,13 @@ input:-webkit-autofill:focus {
 
 .contacts__submit-button:active {
     box-shadow: 0px 0px 4px 4px rgba(212, 193, 127, 0.32);
+}
+
+@media (max-width: 768px) {
+    .contacts__submit-button {
+        grid-area: button;
+        font-size: 1.5rem;
+    }
 }
 
 .footer {
@@ -462,6 +719,12 @@ input:-webkit-autofill:focus {
     line-height: 2.2;
 }
 
+@media (max-width: 768px) {
+    .footer__link {
+        font-size: 1.3rem;
+    }
+}
+
 .footer__link:hover {
     color: #b9b9b9;
 }
@@ -478,6 +741,14 @@ input:-webkit-autofill:focus {
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .footer__contacts-and-socials,
+    .footer__phone-link,
+    .footer__email-link {
+        font-size: 1.3rem;
+    }
+}
+
 .footer__email-link {
     color: #D4C17F;
 }
@@ -488,4 +759,10 @@ input:-webkit-autofill:focus {
     justify-content: space-between;
     margin-top: 0.65rem;
     max-width: 10rem;
+}
+
+@media (max-width: 864px) {
+    .footer__socials-list {
+        max-width: none;
+    }
 }

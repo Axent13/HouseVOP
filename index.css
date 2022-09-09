@@ -556,6 +556,7 @@ body {
     color: white;
     cursor: pointer;
     transition: box-shadow ease 0.2s;
+    border-radius: 0;
 }
 
 @media (max-width: 768px) {
@@ -787,6 +788,7 @@ input:-webkit-autofill:focus {
     color: white;
     cursor: pointer;
     transition: box-shadow ease 0.2s;
+    border-radius: 0;
 }
 
 .contacts__submit-button:hover {

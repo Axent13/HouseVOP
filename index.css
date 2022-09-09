@@ -8,7 +8,7 @@ html {
     font-size: 16px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1144px) {
     html {
         font-size: 12px;
     }
@@ -36,6 +36,13 @@ body {
 @media (max-width: 768px) {
     .header-and-first-screen-wrapper {
         height: 37.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .header-and-first-screen-wrapper {
+        height: initial;
+        margin-bottom: 2rem;
     }
 }
 
@@ -70,6 +77,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     line-height: 0.8;
+}
+
+@media (max-width: 764px) {
+    .logo__type {
+        text-align: center;
+        line-height: initial;
+    }
 }
 
 .main-navigation {
@@ -137,6 +151,13 @@ body {
     }
 }
 
+@media (max-width: 425px) {
+    .first-screen__text {
+        padding-top: 0;
+        font-size: 1.7rem;
+    }
+}
+
 .first-screen__mouse {
     margin: 5rem auto 0;
     background-image: url(./images/mouse.svg);
@@ -158,6 +179,12 @@ body {
     margin: 12.2rem 0 0 2.9rem;
 }
 
+@media (max-width: 1144px) {
+    .first-screen__address-and-phone {
+        margin-top: 7rem;
+    }
+}
+
 @media (max-width: 768px) {
     .first-screen__address-and-phone {
         max-width: 39rem;
@@ -165,8 +192,22 @@ body {
     }
 }
 
+@media (max-width: 425px) {
+    .first-screen__address-and-phone {
+        margin: 1.9rem auto;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .first-screen__address {
     display: flex;
+}
+
+@media (max-width: 425px) {
+    .first-screen__address {
+        margin-bottom: 1.3rem;
+    }
 }
 
 .first-screen__address-icon {
@@ -227,6 +268,20 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width: 572px) {
+    .testimonials__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .testimonials__list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .testimonials__list-item {
     max-width: 14.5rem;
     display: flex;
@@ -239,6 +294,20 @@ body {
 @media (max-width: 768px) {
     .testimonials__list-item {
         min-height: 12rem;
+    }
+}
+
+@media (max-width: 572px) {
+    .testimonials__list-item {
+        min-height: 13rem;
+        max-width: initial;
+    }
+}
+
+@media (max-width: 425px) {
+    .testimonials__list-item {
+        min-height: 11rem;
+        margin-bottom: 2rem;
     }
 }
 
@@ -259,6 +328,12 @@ body {
     margin: 7.3rem auto 0;
     max-width: 72rem;
     padding: 0 1.5rem;
+}
+
+@media (max-width: 425px) {
+    .apartments {
+        margin: 1.3rem auto 0;
+    }
 }
 
 .apartments__header {
@@ -286,6 +361,14 @@ body {
     margin-top: 5.5rem;
 }
 
+@media (max-width: 425px) {
+    .apartments__apartments {
+        flex-direction: column;
+        margin-top: 2.5rem;
+        align-items: center;
+    }
+}
+
 .apartments__card {
     width: 49%;
     margin-bottom: 4.5rem;
@@ -294,6 +377,13 @@ body {
     color: white;
     padding-top: 15.3rem;
     padding-left: 3.1rem;
+}
+
+@media (max-width: 425px) {
+    .apartments__card {
+        margin-bottom: 2.5rem;
+        width: 95%;
+    }
 }
 
 .apartments__card-1 {
@@ -386,6 +476,13 @@ body {
         margin: 1.2rem auto;
         font-size: 1.4rem;
         max-width: 50rem;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 572px) {
+    .cta__description {
+        text-align: center;
     }
 }
 
@@ -499,6 +596,13 @@ input:-webkit-autofill:focus {
     }
 }
 
+@media (max-width: 572px) {
+    .video {
+        width: 95%;
+        height: initial;
+    }
+}
+
 .video:hover > .video__play-button {
     opacity: 0.8;
 }
@@ -598,7 +702,8 @@ input:-webkit-autofill:focus {
 
 @media (max-width: 768px) {
     .contacts__content {
-        margin: 1rem auto;
+        margin: 1rem 0;
+        display: flex;
     }
 }
 
@@ -702,6 +807,16 @@ input:-webkit-autofill:focus {
     background: #2D343C;
 }
 
+.footer__logo {
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 572px) {
+    .footer__logo {
+        display: none;
+    }
+}
+
 .footer-wrapper {
     max-width: 72rem;
     margin: 0 auto;
@@ -710,10 +825,24 @@ input:-webkit-autofill:focus {
     justify-content: space-between;
 }
 
+@media (max-width: 572px) {
+    .footer-wrapper {
+        max-width: 27rem;
+        padding: 2rem 1.5rem 2.5rem;
+        flex-direction: column;
+    }
+}
+
 .footer__links-list {
     list-style: none;
     padding-top: 0.3rem;
     margin-right: 0.6rem;
+}
+
+@media (max-width: 572px) {
+    .footer__links-list {
+        border-bottom: 1px solid white;
+    }
 }
 
 .footer__link {

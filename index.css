@@ -25,7 +25,7 @@ body {
 }
 
 .header-and-first-screen-wrapper {
-    background-image: url(./images/first-screen-background.png);
+    background-image: url(./images/first-screen-background.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -0.5rem;
@@ -211,7 +211,7 @@ body {
 }
 
 .first-screen__address-icon {
-    background-image: url(./images/placeholder.png);
+    background-image: url(./images/placeholder.webp);
     background-repeat: no-repeat;
     width: 21px;
     height: 21px;
@@ -236,7 +236,7 @@ body {
 }
 
 .first-screen__phone-icon {
-    background-image: url(./images/phone-call.png);
+    background-image: url(./images/phone-call.webp);
     background-repeat: no-repeat;
     width: 21px;
     height: 21px;
@@ -388,32 +388,32 @@ body {
 
 .apartments__card-1 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-1.png') center/cover no-repeat,
+                url('./images/apartments-1.webp') center/cover no-repeat,
                 #D4C17F;
 }
 
 .apartments__card-2 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-2.png') center/cover no-repeat,
+                url('./images/apartments-2.webp') center/cover no-repeat,
                 #D4C17F;
 }
 
 .apartments__card-3 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-3.png') center/cover no-repeat,
+                url('./images/apartments-3.webp') center/cover no-repeat,
                 #D4C17F;
 }
 
 .apartments__card-4 {
     background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%),
-                url('./images/apartments-4.png') center/cover no-repeat,
+                url('./images/apartments-4.webp') center/cover no-repeat,
                 #D4C17F;
 }
 
 .cta {
     background: linear-gradient(180deg, #242B33 10.42%, rgba(36, 43, 51, 0) 50.52%, #242B33 90.1%),
                 linear-gradient(0deg, rgba(36, 43, 51, 0.9), rgba(36, 43, 51, 0.9)),
-                url('./images/cta-background.png') 100%/cover no-repeat,
+                url('./images/cta-background.webp') 100%/cover no-repeat,
                 #C4C4C4;
 }
 

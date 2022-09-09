@@ -529,6 +529,9 @@ body {
         font-size: 1.5rem;
         height: 4rem;
         width: 24rem;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
     }
 }
 
@@ -556,9 +559,6 @@ body {
     color: white;
     cursor: pointer;
     transition: box-shadow ease 0.2s;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
 }
 
 @media (max-width: 768px) {
@@ -754,6 +754,9 @@ input:-webkit-autofill:focus {
         font-size: 1.5rem;
         height: 4rem;
         width: 24rem;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        border-radius: 0;
     }
 }
 
@@ -790,9 +793,6 @@ input:-webkit-autofill:focus {
     color: white;
     cursor: pointer;
     transition: box-shadow ease 0.2s;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
 }
 
 .contacts__submit-button:hover {

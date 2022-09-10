@@ -13,9 +13,7 @@ $videoSection.onclick = () => {
   }
 }
 
-ymaps.ready(init);
-
-function init(){
+function yandexMapsInit(){
   var myMap = new ymaps.Map("map", {
       center: [55.76, 37.64],
       zoom: 7,
@@ -23,3 +21,5 @@ function init(){
   });
   console.log('init');
 }
+
+document.addEventListener('DOMContentLoaded', () =>  ymaps.ready(yandexMapsInit));

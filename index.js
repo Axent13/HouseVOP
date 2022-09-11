@@ -19,7 +19,6 @@ function yandexMapsInit(){
       zoom: 7,
       controls: []
   });
-  console.log('init');
 }
 
 document.addEventListener('DOMContentLoaded', () =>  ymaps.ready(yandexMapsInit));
